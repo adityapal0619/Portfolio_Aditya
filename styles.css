@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0,0,33);
+    color: white;
+}
+.main_2{ 
+    position: relative; /* To position children absolutely */
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it's behind other elements */
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+nav ul a:hover{
+   color: rgb(153, 153, 226);
+   font-size: 1.2rem;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px
+}
+.left{
+    font-size: 1.9rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 2.1rem;
+}
+.leftSection .buttons{
+    padding:  30px 0;
+}
+.leftSection .buttons .btn:hover{
+    background-color: rgb(12, 0, 63);
+}
+.leftSection .btn{
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.rightSection img{
+    width: 300px;
+    height: 300px;
+}
+.purple{
+    color: rgb(185, 130, 236);
+}
+#element{
+    color: rgb(153, 153, 226);
+    font-size:larger;
+}
+main hr{
+    border: 0;
+    background-color: rgb(184, 107, 255);
+    height: 1.2px;
+    margin: 30px 80px;
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.text-grey{
+    color: gray;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.secondSection .box{
+    display: flex;
+    background-color: white;
+    width:77vw;
+    height: 2px;
+    margin: 56px 0;
+}
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 120px;
+}
+.image-top{
+    width: 30px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top:75px;
+    width: 150px;
+}
+.vertical-desc{
+    position: relative;
+    top:86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+/* Services */
+.services-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fffbfb;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1a73e8;
+  }
+  
+  .service-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  
+/* Project */
+.projects-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center; /* Center the project cards */
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 300px; /* Fixed width for each project card */
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  
+  .project-img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #1a73e8;
+  }
+  
+  .project-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    background-color: #0c50b6;
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 768px) {
+    .projects-container {
+      justify-content: space-between; /* Spread the cards out */
+    }
+  
+    .project-card {
+      width: 30%; /* Responsive width for larger screens */
+    }
+  }
+  
+/* Footer */
+footer{
+    background-color:#0e0e1a;
+    height:223px ;
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
