@@ -3,7 +3,7 @@ var typed = new Typed('#element', {
     typeSpeed: 50,
   });
 
-  const canvas = document.getElementById('fireworks');
+const canvas = document.getElementById('fireworks');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -70,3 +70,40 @@ function launchFirework() {
 
 launchFirework();
 draw();
+document.querySelector('form').addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+  
+    if (!name || !email || !message) {
+      alert('Please fill out all fields.');
+      event.preventDefault();
+    }
+  });
+
+
+  // JavaScript for progress bar animations
+window.addEventListener('scroll', function() {
+    const skillsSection = document.querySelector('#skills');
+    const progressBars = document.querySelectorAll('.progress');
+    const circles = document.querySelectorAll('.circle');
+    
+    const sectionPosition = skillsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.5;
+  
+    if (sectionPosition < screenPosition) {
+      // Animate horizontal progress bars
+      progressBars.forEach(bar => {
+        const skillLevel = bar.getAttribute('data-skill');
+        bar.style.width = skillLevel + '%';
+      });
+  
+      // Animate circular progress bars
+      circles.forEach(circle => {
+        const skillLevel = circle.getAttribute('data-skill');
+        circle.style.background = `conic-gradient(#9999E2 ${skillLevel}%, #444 ${skillLevel}%)`;
+      });
+    }
+  });
+  
+  

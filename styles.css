@@ -5,6 +5,9 @@
 body{
     background-color: rgb(0,0,33);
     color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .main_2{ 
     position: relative; /* To position children absolutely */
@@ -86,6 +89,15 @@ main hr{
     background-color: rgb(184, 107, 255);
     height: 1.2px;
     margin: 30px 80px;
+    animation: grow-line 2s ease-out forwards;
+}
+@keyframes grow-line {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 .secondSection{
     max-width: 80vw;
@@ -162,7 +174,7 @@ main hr{
   .service-card h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #1a73e8;
+    color:rgb(153, 153, 226);;
   }
   
   .service-card p {
@@ -217,7 +229,7 @@ main hr{
   .project-card h3 {
     font-size: 24px;
     margin-top: 15px;
-    color: #1a73e8;
+    color: rgb(153, 153, 226);;
   }
   
   .project-card p {
@@ -249,14 +261,269 @@ main hr{
       width: 30%; /* Responsive width for larger screens */
     }
   }
+  /*Contact me */
+  #contact {
+    padding: 50px 20px;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
   
 /* Footer */
-footer{
-    background-color:#0e0e1a;
-    height:223px ;
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
 }
-.footer{
-    display: flex;
-    padding: 23px 122px;
-    justify-content: space-evenly;
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+/* Footer Menu Styling */
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu li {
+  margin: 0 15px;
+}
+
+.footer-menu  .menu-footer {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #9999E2;
+}
+
+/* Contact Info */
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #b5b5b5;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #b5b5b5;
+  font-size: 34px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color:#0cf5f5;
+}
+
+/* Copyright */
+.copyright {
+  font-size: 14px;
+  color: #7f7f7f;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .social-icons li {
+    margin-bottom: 10px;
+  }
+}
+/* General section styling */
+/* General section styling */
+#skills {
+  padding: 50px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.technical-skills, .professional-skills {
+  width: 45%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(153, 153, 226);
+}
+
+/* Technical Skills */
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: #444;
+  border-radius: 20px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  background-color:rgb(153, 153, 226);;
+  height: 100%;
+  width: 0;
+  transition: width 2s ease;
+  border-radius: 20px;
+}
+
+/* Professional Skills (Circular Progress) */
+.circle_skill{
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.circle-skill {
+  width: 45%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#9999E2 0%, #9999E2 0%, #444 0%);
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.circle::before {
+  content: attr(data-skill) '%';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+}
+
+
+.codelanguage{
+  font-weight: bold;
+  color: #333333; /* Dark gray for contrast */
+  padding: 2px 4px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a subtle 3D effect */
+  transition: background-color 0.3s ease;
+}
+.codelanguage:hover{
+  background-color: #9999E2;
 }

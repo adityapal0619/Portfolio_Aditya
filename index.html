@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio_Aditya_Pal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,14 +13,14 @@
     <header>
       <canvas id="fireworks"></canvas>
         <nav>
-            <div class="left">Aditya</div>
+            <div class="left">Aditya Pal</div>
             <div class="right">
                 <ul>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Work_Experience">Work Experience</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +33,7 @@
     </main>
         <section class="firstSection" id="Home">
             <div class="leftSection">
-                Hi,My name is <span class="purple">Aditya Pal</span>
+                Hi,My name is <span class="purple">Aditya </span>
                 <div>I am a passionate</div>
                 <span id="element"></span>
                 <div class="buttons">
@@ -99,16 +100,82 @@
             <div class="services-container">
               <div class="service-card">
                 <h3>Web Development</h3>
-                <p>Building responsive and functional websites using modern technologies like HTML, CSS, JavaScript, and frameworks.</p>
+                <p>I specialize in building responsive and functional websites tailored to meet the diverse needs of businesses and individuals. In today’s digital landscape, a strong online presence is essential, and I am dedicated to delivering high-quality web solutions that engage users while effectively representing your brand identity.</p>
               </div>
               <div class="service-card">
                 <h3>UI/UX Design</h3>
-                <p>Designing user-friendly and visually appealing interfaces that enhance user experience.</p>
+                <p>I create intuitive and visually appealing user interfaces that enhance user experience. By focusing on user-centered design, I ensure my designs meet user needs through research and testing. Utilizing tools like Figma and Adobe XD, I develop wireframes and prototypes to visualize user journeys.</p>
               </div>
               <div class="service-card">
-                <h3>SEO Optimization</h3>
-                <p>Improving website ranking on search engines to drive organic traffic and increase visibility.</p>
+                <h3>Microsoft Dynamics 365 (D365) Finance and Operations</h3>
+                <p>I specialize in Microsoft Dynamics 365 (D365) Finance and Operations, a powerful enterprise resource planning (ERP) solution that streamlines financial management and operational processes. My expertise includes configuring and customizing D365 to meet specific business needs, ensuring that organizations can effectively manage their finances, supply chains, and project management.</p>
               </div>
+            </div>
+          </section>
+          <hr>
+          <section id="skills">
+            <div class="skills-container">
+              <!-- Technical Skills -->
+              <div class="technical-skills">
+                <h2>Technical Skills</h2>
+                <div class="skill">
+                  <p>HTML <span>86%</span></p>
+                  <div class="progress-bar">
+                    <div class="progress" data-skill="86"></div>
+                  </div>
+                </div>
+        
+                <div class="skill">
+                  <p>CSS <span>85%</span></p>
+                  <div class="progress-bar">
+                    <div class="progress" data-skill="85"></div>
+                  </div>
+                </div>
+        
+                <div class="skill">
+                  <p>JavaScript <span>60%</span></p>
+                  <div class="progress-bar">
+                    <div class="progress" data-skill="60"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <p>C# .net <span>55%</span></p>
+                  <div class="progress-bar">
+                    <div class="progress" data-skill="55"></div>
+                  </div>
+                </div>
+                <div class="skill">
+                  <p> Microsoft Dynamics 365 (D365) Finance and Operations <span>90%</span></p>
+                  <div class="progress-bar">
+                    <div class="progress" data-skill="90"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Professional Skills -->
+              <div class="professional-skills">
+                <h2>Professional Skills</h2>
+                <div class="circle_skill">
+                <div class="circle-skill">
+                  <div class="circle" data-skill="95"></div>
+                  <p>Communication</p>
+                </div>
+        
+                <div class="circle-skill">
+                  <div class="circle" data-skill="86"></div>
+                  <p>Problem-Solving</p>
+                </div>
+        
+                <div class="circle-skill">
+                  <div class="circle" data-skill="65"></div>
+                  <p>Team Work</p>
+                </div>
+        
+                <div class="circle-skill">
+                  <div class="circle" data-skill="60"></div>
+                  <p>Creativity</p>
+                </div>
+              </div>
+            </div>
             </div>
           </section>
           <hr>
@@ -121,7 +188,7 @@
               <div class="project-card">
                 <img src="Photo/project_1.PNG" alt="Project 1 Screenshot" class="project-img">
                 <h3>Pizza Website </h3>
-                <p>The Pizza  website project is focused on creating a modern, responsive web application dedicated to providing users with an exceptional pizza ordering experience. Built using HTML, CSS, JavaScript, and C#, this project incorporates the latest design principles to ensure accessibility and usability across all devices.</p>
+                <p>The Pizza  website project is focused on creating a modern, responsive web application dedicated to providing users with an exceptional pizza ordering experience. Built using <span class="codelanguage">HTML, CSS, and JavaScript, and C#,</span> this project incorporates the latest design principles to ensure accessibility and usability across all devices.</p>
                 <a href="https://github.com/adityapal0619/Aditya_Pizza_Store" class="project-link" target="_blank">View on GitHub</a>
               </div>
               
@@ -129,39 +196,80 @@
               <div class="project-card">
                 <img src="Photo/project_2.PNG" alt="Project 2 Screenshot" class="project-img">
                 <h3>Libary Mangement</h3>
-                <p>The Library Management System is a comprehensive web application designed to facilitate the smooth management of library resources. It provides users with easy access to the library catalog, borrowing options, and return management, while offering administrators control over the inventory and user activity.</p>
+                <p>This web application streamlines library operations by facilitating book cataloging, user registration, and borrowing processes. Built with <span class="codelanguage">HTML, CSS, and JavaScript, and C#,</span> it offers a modern and responsive experience for both staff and patrons on all devices. The project aims to enhance the efficiency and accessibility of library services.</p>
                 <a href="https://github.com/adityapal0619/LibaryMangement" class="project-link" target="_blank">View on GitHub</a>
               </div>
               <!-- Project 3 -->
               <div class="project-card">
-                <img src="Photo/project_2.PNG" alt="Project 2 Screenshot" class="project-img">
-                <h3>Project 2 Title</h3>
-                <p>This project is focused on developing a custom content management system.</p>
+                <img src="Photo/project_4.PNG" alt="Project 2 Screenshot" class="project-img">
+                <h3>Bus Booking System</h3>
+                <p>This web application simplifies the process of booking bus tickets, allowing users to search for routes, check schedules, and make secure payments. Built with <span class="codelanguage">HTML, CSS, and JavaScript, and C#,</span> it provides a user-friendly and responsive experience across all devices. The project aims to enhance travel convenience and efficiency for passengers.</p>
                 <a href="https://github.com/adityapal0619/Simple_Appliction_WebForm" class="project-link" target="_blank">View on GitHub</a>
               </div>
               <!-- Project 4 -->
               <div class="project-card">
                 <img src="Photo/Project_3.PNG" alt="Project 2 Screenshot" class="project-img">
                 <h3>Happy Navratri Website</h3>
-                <p>This project is focused on developing a custom content management system.</p>
+                <p>This website celebrates the Navratri festival through an engaging platform featuring event schedules, traditional recipes, and garba dance tutorials. Built with <span class="codelanguage">HTML, CSS, and JavaScript, </span> it ensures a modern, responsive experience for users on all devices. The project aims to foster community engagement and participation in the festivities.</p>
                 <a href="https://github.com/adityapal0619/Happy_Navratri_By_Aditya_Pal" class="project-link" target="_blank">View on GitHub</a>
               </div>
             </div>
           </section>
+
+          <hr>
+          <section id="contact">
+            <div class="contact-container">
+              <h2>Contact Me</h2>
+              <p>If you have any questions or want to work together, feel free to reach out!</p>
+              
+              <form action="#" method="POST">
+                <div class="form-group">
+                  <label for="name">Your Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+          
+                <div class="form-group">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+          
+                <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+          
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </section>
+          
           
     </main>
     <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Aditya's Developer Portfolio</h3>
-            </div>
-            <div class="footer-second">
-
-            </div>
-            <div class="footer-third"></div>
-            <div class="footer-fourth"></div>
+      <div class="footer-container">
+        <h2>Aditya's Developer Portfolio</h2>
+        
+        <div class="footer-content">
+          <!-- Footer Menu -->
+          <ul class="footer-menu">
+            <li><a class="menu-footer" href="#home">Home</a></li>
+            <li><a class="menu-footer" href="#about">About</a></li>
+            <li><a class="menu-footer" href="#projects">Projects</a></li>
+            <li><a class="menu-footer" href="#contact">Contact</a></li>
+          </ul>
+          
+          <!-- Contact Information -->
+          <p class="email">Contact me at: <a href="mailto:adityadd2001@gmail.com">adityadd2001@gmail.com</a></p>
+          <!-- Social Media Icons -->
+          <ul class="social-icons">
+            <li><a href="https://github.com/adityapal0619"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aditya-pal-21816b200/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.hackerrank.com/profile/adityadd2001"><i class="fa-brands fa-hackerrank"></i></a></li>
+          </ul>
         </div>
-    </footer>
+        <p class="copyright">© 2024 Aditya Pal. All rights reserved.</p>
+      </div>
+    </footer>    
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
