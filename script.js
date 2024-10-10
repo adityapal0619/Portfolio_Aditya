@@ -105,5 +105,16 @@ window.addEventListener('scroll', function() {
       });
     }
   });
+
+  function downloadResume() {
+    // Change the URL to the path of your resume
+    const resumeUrl = 'path-to-your-resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Photo/Aditya_Pal_Resume.pdf'; // Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
   
   
