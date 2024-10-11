@@ -74,8 +74,8 @@ nav ul li{
     cursor: pointer;
 }
 .rightSection img{
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
 }
 .purple{
     color: rgb(185, 130, 236);
@@ -761,3 +761,4 @@ h2 {
       flex: 0 0 30%; /* Three items per row on larger screens */
   }
 }
+
