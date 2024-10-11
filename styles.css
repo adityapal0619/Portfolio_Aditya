@@ -527,3 +527,237 @@ h2 {
 .codelanguage:hover{
   background-color: #9999E2;
 }
+
+/* Media Query for Small Devices (Mobile) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    margin: 60px 0;
+    text-align: center;
+  }
+
+  .firstSection > div {
+    width: 100%;
+  }
+
+  .leftSection {
+    font-size: 1.6rem;
+  }
+
+  .leftSection .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .rightSection img {
+    width: 150px; /* Reduced image size for better fit */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 20px;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Projects Section */
+  .projects-section {
+    padding: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Skills Section */
+  #skills {
+    padding: 20px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .technical-skills, .professional-skills {
+    width: 100%;
+  }
+
+  .circle_skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle-skill {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 20px;
+  }
+
+  .contact-container {
+    width: 100%;
+  }
+
+  /* Footer Section */
+  footer {
+    padding: 20px;
+  }
+
+  .footer-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-menu li {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+/* Media Query for Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftSection {
+    font-size: 1.8rem;
+  }
+
+  .rightSection img {
+    width: 250px; /* Adjusted image size for tablets */
+    height: auto;
+  }
+
+  /* Services Section */
+  .services-section {
+    padding: 30px;
+  }
+
+  .service-card {
+    width: 45%; /* Two cards per row */
+    margin-bottom: 20px;
+  }
+
+  /* Projects Section */
+  .projects-section {
+    padding: 30px;
+  }
+
+  .project-card {
+    width: 45%; /* Two cards per row */
+    margin-bottom: 20px;
+  }
+
+  /* Skills Section */
+  .technical-skills, .professional-skills {
+    width: 100%;
+  }
+
+  /* Footer Section */
+  .footer-menu li {
+    margin-bottom: 15px;
+  }
+}
+
+/* Media Query for Larger Screens (Desktops) */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: row; /* Horizontal navigation */
+    height: 80px;
+  }
+
+  .projects-container {
+    justify-content: space-between; /* Spread the cards out */
+  }
+
+  .project-card {
+    width: 30%; /* Three cards per row */
+  }
+
+  /* Skills Section */
+  .skills-container {
+    justify-content: space-between; /* Space out skills sections */
+  }
+
+  .technical-skills, .professional-skills {
+    width: 45%; /* Maintain proportion on larger screens */
+  }
+
+  .circle-skill {
+    width: 45%; /* Maintain proportion on larger screens */
+  }
+}
+@media (max-width: 768px) {
+  .work-experience {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .work-experience-item {
+      margin: 10px 0; /* Margin for stacked items */
+  }
+}
+
+/* Media Query for Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .work-experience {
+      flex-direction: row; /* Keep items in a row */
+      flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  }
+
+  .work-experience-item {
+      flex: 0 0 48%; /* Two items per row with some margin */
+  }
+}
+
+/* Media Query for Larger Screens (Desktops) */
+@media (min-width: 1025px) {
+  .work-experience-item {
+      flex: 0 0 30%; /* Three items per row on larger screens */
+  }
+}
